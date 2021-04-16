@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	}
+	
+	
+
+header{
+
+	background-repeat: no-repeat; 
+	background-color: white;
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+}
+
+.clearfix:after{
+content: ".";
+visibility:hidden;
+display:block;
+height:0px;
+clear:both;
+}
+
+.row{
+	max-width:1180px;
+	margin:0 auto;
+}
+
+.logo{
+	height: 80px;
+	width:auto;
+	float:left;
+	margin-top: 25px;
+	margin-right: 350px;
+}
+
+.logo2{
+	height: 380px;
+	width:auto;
+	float:right;
+	margin-bottom: 40px;
+	margin-right: 80px;
+}
+.main-nav{
+	float: right;
+	margin-top:40px;
+	position:absolute;
+	margin-left:900px;
+	text-decoration:none;
+}
+.main-nav li{
+	display:  inline-block;
+	list-style:none;
+	margin-left:15px;
+	font-family: arial;
+	color: #aa83e0;
+}
+
+
+
+.main-content-header{
+	width: 1180px;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+h1{
+	color:#212529;
+	font-size: 60px;
+	word-spacing:5px;
+	letter-spacing:0.5px;
+	margin-bottom: 20px;
+	font-weight: strong;
+	font-family: arial;
+	margin-right:40px;
+}
+
+h6{
+	font-family:arial;
+	color: #787878;
+	font-size: 15px;
+	margin-top: 25px;
+	
+}
+
+.btn{
+	display: inline-block;
+	padding: 15px 20px;
+	 text-decoration: none;
+	transition: transform 250ms;
+}
+
+.btn-full{
+	background-color: #800080;
+	color: white;
+	margin-right: 15px;
+	border: 1px solid #800080;
+	border-radius: 6px;
+	font-family: arial;
+	font-size: 15px;
+}
+
+ .btn:hover {
+    transform: translateY(-10px);
+  }
+
+@media only screen and (max-width: 1180px){
+		.main-content-header{
+			width:100%;
+			padding: 0 2%
+			}
+}
+
+@media only screen and (max-width: 998px){
+		h1{font-size:200%;}
+}
+
+@media only screen and (max-width: 768px){
+	h1{font-size:180%}
+	.main-nav{display:none;}
+	}
+
+
+
+
+
+</style>
+<title>tutedude</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="tutedude 1.png" class="logo">
+				<img src="tutedude 2.png" class="logo2">
+				
+				<ul class="main-nav">
+					
+					<li>Home</li>
+					<li>Skills</li>
+					<li>Why Tutedude</li>
+					<li style="color:black">Login</li>
+					<li style="color:black">Signup</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main-content-header">
+		<h6>Best quality courses.<h6><h1>Brighten Up </br>Yourself<h1>
+<h6>Learning a new skill is necessary in this highly competitve </br>world<h6>
+			
+
+		<button type="button" class="btn btn-full" onclick="alert('welcome to Tutedude')">Explore now</button>
+		
+
+		</div>
+	
+	</header>
+
+</body>
+</html>
